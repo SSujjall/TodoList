@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/TodoliWebapp/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsTodoDB_52B3F89823",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/webappdatabase/databases/TodoliDB",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:TodoDB",
+      "dynamicId": null
+    }
+  }
+}

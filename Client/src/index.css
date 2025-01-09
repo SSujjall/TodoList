@@ -1,0 +1,133 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Importing Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('/cyan_background.jpg') no-repeat center center/cover;
+}
+
+#root {
+  width: 100%;
+  padding: 0;
+}
+
+.login-container {
+  max-width: 410px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.login-form .input-wrapper {
+  height: 54px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login-form .input-wrapper i {
+  color: #c1c1c1;
+  position: absolute;
+}
+
+.login-form .input-wrapper i:not(.eye-icon) {
+  left: 0.9rem;
+  pointer-events: none;
+}
+
+.login-form .input-wrapper i.eye-icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+  right: 0.9rem;
+  display: none;
+}
+
+.login-form .input-wrapper .input-field {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 1.06rem;
+  border-radius: 0.31rem;
+  border: 1px solid #c1c1c1;
+  padding: 0 1.25rem 0 3.12rem;
+  transition: 0.2s ease;
+}
+
+.login-form .input-wrapper .input-field:valid~i.eye-icon {
+  display: block;
+}
+
+.login-form .input-wrapper .input-field:focus {
+  border-color: black;
+}
+
+.login-form .input-wrapper .input-field:focus~i:not(.eye-icon) {
+  color: grey;
+}
+
+.login-form .input-wrapper .input-field::placeholder {
+  color: #c1c1c1;
+}
+
+.login-button {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  background: #219CA7;
+  margin-top: 1rem;
+  border-radius: 0.31rem;
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form .login-button:hover {
+  background-color: #1d848e;
+}
+
+.login-form .forgot-pass-link {
+  display: block;
+  width: fit-content;
+  margin-top: -0.46rem;
+}
+
+.login-container .signup-text {
+  text-align: center;
+  font-weight: 500;
+  margin: 1.75rem 0 0.31rem;
+}
+
+.login-container a {
+  color: #1d848e;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

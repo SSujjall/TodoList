@@ -1,0 +1,29 @@
+.task-display-container {
+    display: flex;
+    position: relative;
+    transition: margin-right 0.3s ease;
+}
+
+.task-content {
+    flex: 1;
+    transition: margin-right 0.3s ease;
+}
+
+.task-header button {
+    width: 10rem;
+    margin: 0;
+}
+
+.task-checkbox {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.task-date-div {
+    display: flex;
+    margin-left: 1.5rem;
+    margin-top: 0.4rem;
+    color: #797979;
+}
